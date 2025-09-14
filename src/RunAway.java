@@ -180,7 +180,7 @@ public class RunAway extends JFrame implements Runnable, MouseListener, MouseMot
         boolean hoverPlay = pointInCircle(mouseX, mouseY, playCx, playCy, playRadius);
         drawCircleButton(g, playCx, playCy, playRadius, "PLAY", base, hoverPlay);
 
-        // HELP and SHOP smaller circles
+        // help and shop smaller circles
         int helpCx = width/4, shopCx = 3*width/4;
         int helpCy = 3*height/4, radiusSmall = width/8;
         boolean hoverHelp = pointInCircle(mouseX, mouseY, helpCx, helpCy, radiusSmall);
@@ -252,7 +252,7 @@ public class RunAway extends JFrame implements Runnable, MouseListener, MouseMot
             drawCenteredString(g, helpLines[i], width / 2, startY + i * 24);
         }
 
-        // BACK button (styled)
+        // back button
         int bx = width/2 - width/12, by = 13*height/16 - height/12, bw = width/6, bh = height/6;
         boolean hoverBack = pointInRect(mouseX, mouseY, bx, by, bw, bh);
         drawRectButton(g, bx, by, bw, bh, "BACK", hoverBack);
