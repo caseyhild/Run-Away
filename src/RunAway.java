@@ -1,9 +1,9 @@
-import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.image.BufferStrategy;
 import java.util.ArrayList;
 import java.util.Arrays;
+import javax.swing.*;
 
 public class RunAway extends JFrame implements Runnable, MouseListener, MouseMotionListener, KeyListener {
     private final int width = 640;
@@ -14,10 +14,10 @@ public class RunAway extends JFrame implements Runnable, MouseListener, MouseMot
     // mouse / keyboard
     private int mouseX, mouseY;
 
-    private String gameState = "menu"; // "menu", "shop", "help", "play", "win", "lose"
+    private String gameState = "menu";  // "menu", "shop", "help", "play", "win", "lose"
     private String selectedColor;
-    private Color playerColor;    // color used for drawing player & ball
-    private float rainbowHue = 0f;            // 0..1 for HSB rainbow cycle
+    private Color playerColor;          // color used for drawing player & ball
+    private float rainbowHue = 0f;      // 0..1 for HSB rainbow cycle
 
     // player / world coordinates
     private final double WORLD_MIN = -100;
